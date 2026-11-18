@@ -677,6 +677,16 @@ p{margin:0}
 .paths{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:13px;color:var(--ink-3)}
 .journey .lic-step ul{margin:8px 0 0;padding-left:16px;font-size:13.5px;color:var(--ink-2);display:grid;gap:4px}
 
+/* familia Gemini 4 */
+.models{margin-top:22px;padding-top:18px;border-top:1px solid var(--line)}
+.models h4{margin-bottom:12px}
+.model-list{display:grid;gap:8px}
+.model-list div{display:grid;grid-template-columns:auto 1fr auto;gap:2px 12px;align-items:center;padding:12px 14px;border-radius:16px;background:var(--paper);box-shadow:inset 0 0 0 1px var(--line)}
+.model-list b{font-size:15px;font-weight:600}
+.model-list span{grid-column:1/3;font-size:13px;color:var(--ink-2);line-height:1.4}
+.model-list em{grid-row:1/3;grid-column:3;font-style:normal;font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;padding:4px 9px;border-radius:999px;background:#fff;box-shadow:inset 0 0 0 1px var(--line-2);color:var(--ink-2);white-space:nowrap}
+.model-list .def em{background:var(--ink);color:#fff;box-shadow:none}
+
 /* ---------- responsivo ---------- */
 @media (max-width:1380px){
   .nav-links a{padding:8px 8px;font-size:13px}
@@ -944,8 +954,8 @@ p{margin:0}
           <b>500</b>
           <h4>personas capacitadas</h4>
           <p>Profesionales formados y operando SYNAPS para diciembre de 2026.</p>
-          <div class="progress" aria-hidden="true"><span style="width:66.6%"></span></div>
-          <small>333 capacitadas al 2 de noviembre de 2026</small>
+          <div class="progress" aria-hidden="true"><span style="width:73.4%"></span></div>
+          <small>367 capacitadas al 17 de noviembre de 2026</small>
         </div></article>
         <article class="bz goal rv d1"><div class="core"><i class="ph-light ph-factory"></i><h4>Fábrica de casos de uso</h4><p>Una «fábrica» interna de soluciones para ganar eficiencia en todas las áreas.</p></div></article>
         <article class="bz goal rv d2"><div class="core"><i class="ph-light ph-clock-countdown"></i><h4>Miles de horas ahorradas</h4><p>Liberar a los equipos de tareas manuales y repetitivas.</p></div></article>
@@ -967,7 +977,7 @@ p{margin:0}
         </div></div></div></div>
         <div class="qa" id="q-objetivos"><button class="qa-q" aria-expanded="false"><span>¿Cuáles son los objetivos de SYNAPS para la empresa?</span><i class="qa-x"></i></button><div class="qa-a"><div><div class="qa-body">
           <ul>
-            <li><strong>500 personas capacitadas</strong> y operando SYNAPS para diciembre de 2026 (al 2 de noviembre ya eran 333).</li>
+            <li><strong>500 personas capacitadas</strong> y operando SYNAPS para diciembre de 2026 (al 17 de noviembre ya eran 367).</li>
             <li><strong>Fábrica de casos de uso:</strong> una «fábrica» interna de soluciones que multiplique la eficiencia en todas las áreas.</li>
             <li><strong>Miles de horas ahorradas</strong> al año en tareas manuales y repetitivas.</li>
             <li><strong>Más valor agregado:</strong> llevar el talento hacia la creatividad, la estrategia y la innovación de negocio.</li>
@@ -1170,10 +1180,26 @@ p{margin:0}
           <li><b>1</b><span><strong>Adjuntar archivos (+):</strong> sube documentos desde tu computadora o desde Drive.</span></li>
           <li><b>2</b><span><strong>Herramientas:</strong> limita la búsqueda a fuentes internas o habilita recursos específicos.</span></li>
           <li><b>3</b><span><strong>Conectores:</strong> activa o desactiva Gmail, Drive, Calendar y más.</span></li>
-          <li><b>4</b><span><strong>Selector de modelo:</strong> elige el Gemini adecuado, incluido <strong>Gemini 4 Argon</strong> (1M de tokens) para razonamiento profundo; también está disponible en los agentes de flujo de trabajo.</span></li>
+          <li><b>4</b><span><strong>Selector de modelo:</strong> elige entre Gemini 4 Carbon, Argon o Hydrogen según lo que pese más: calidad o velocidad.</span></li>
         </ul>
+        <div class="models">
+          <h4>¿Qué modelo elijo?</h4>
+          <div class="model-list">
+            <div><b>Gemini 4 Carbon</b><em>Máxima precisión</em><span>Tareas complejas de varios pasos y arquitectura de sistemas. #1 en 15 de 17 benchmarks oficiales.</span></div>
+            <div class="def"><b>Gemini 4 Argon</b><em>Equilibrado</em><span>Investigación en varias fuentes, entregables y código iterativo. 1M de tokens; la mitad de costo que Carbon.</span></div>
+            <div><b>Gemini 4 Hydrogen</b><em>Máxima velocidad</em><span>Tareas del día a día, preguntas rápidas y pruebas. 2.5× más rápido y 3× más barato.</span></div>
+          </div>
+        </div>
       </div></div>
       <div class="bz faq"><div class="core">
+        <div class="qa" id="q-modelos"><button class="qa-q" aria-expanded="false"><span>¿Qué modelo de Gemini elijo: Carbon, Argon o Hydrogen?</span><i class="qa-x"></i></button><div class="qa-a"><div><div class="qa-body">
+          <ul>
+            <li><strong>Gemini 4 Carbon · máxima precisión:</strong> tareas complejas de varios pasos y arquitectura de sistemas. Es el #1 en 15 de 17 benchmarks oficiales.</li>
+            <li><strong>Gemini 4 Argon · equilibrado:</strong> investigación en varias fuentes, creación de entregables y código iterativo, con ventana de 1 millón de tokens. Cuesta la mitad que Carbon.</li>
+            <li><strong>Gemini 4 Hydrogen · máxima velocidad:</strong> tareas del día a día, preguntas rápidas y experimentar. Es 2.5 veces más rápido y 3 veces más barato.</li>
+          </ul>
+          <p>Regla práctica: empieza con Argon; sube a Carbon si la tarea es compleja y baja a Hydrogen para lo rápido y repetitivo.</p>
+        </div></div></div></div>
         <div class="qa" id="q-chats-180"><button class="qa-q" aria-expanded="false"><span>¿Mis conversaciones se guardan para siempre?</span><i class="qa-x"></i></button><div class="qa-a"><div><div class="qa-body">
           <p><strong>No.</strong> Todas las conversaciones de SYNAPS tienen un ciclo de vida estricto de <strong>180 días</strong>; después se eliminan de forma definitiva.</p>
         </div></div></div></div>
@@ -1185,7 +1211,7 @@ p{margin:0}
             <li><strong>Adjuntar archivos (+):</strong> documentos desde tu computadora o Drive.</li>
             <li><strong>Herramientas:</strong> limitar la búsqueda a fuentes internas o habilitar recursos específicos.</li>
             <li><strong>Conectores:</strong> activar o desactivar Gmail, Drive, Calendar, etc.</li>
-            <li><strong>Selector de modelo:</strong> elegir el modelo de Gemini según la complejidad de la tarea, incluido el nuevo modelo frontera <strong>Gemini 4 Argon</strong>, con ventana de 1 millón de tokens para razonamiento profundo y flujos extensos. Argon está disponible tanto en el chat como en los agentes de flujo de trabajo.</li>
+            <li><strong>Selector de modelo:</strong> elegir el modelo de Gemini según la complejidad de la tarea, con la familia <strong>Gemini 4</strong>: Carbon (máxima precisión), Argon (equilibrado, ventana de 1 millón de tokens; disponible en el chat y en los agentes de flujo de trabajo) o Hydrogen (máxima velocidad). Ver <a href="#q-modelos" data-goto="q-modelos">¿Qué modelo elijo?</a></li>
           </ol>
         </div></div></div></div>
         <div class="qa" id="q-memoria"><button class="qa-q" aria-expanded="false"><span>¿Qué es la memoria guardada («Memorize»)?</span><i class="qa-x"></i></button><div class="qa-a"><div><div class="qa-body">
@@ -1317,7 +1343,26 @@ p{margin:0}
             <li>Pruébala en el chat.</li>
           </ol>
           <p>Para usarla, escribe <span class="mono">/</span> y elígela, o pide la tarea y SYNAPS la escoge sola. <strong>La descripción es lo que decide cuándo se activa:</strong> escríbela como una guía de «cuándo usarme», con las palabras que usarían tus compañeros.</p>
+          <p>También puedes mencionarla dentro de tu prompt con <span class="mono">@</span> (por ejemplo, «revisa este contrato con <span class="mono">@RevisionContratos</span>»).</p>
           <p>Puedes usar <strong>varias Skills en el mismo chat</strong>, <strong>compartirlas</strong> con tus compañeros y <strong>activarlas o desactivarlas</strong> a mano.</p>
+          <p><strong>Para compartir una:</strong> abre el menú de opciones de la Skill (<span class="mono">…</span>), elige <strong>Compartir</strong> y escribe los correos de tus compañeros; para que la use toda el área, pide su despliegue general.</p>
+          <p><strong>Ojo:</strong> si estás conversando con un agente, las Skills quedan inactivas en esa sesión; no se pueden usar un agente y una Skill en el mismo prompt.</p>
+        </div></div></div></div>
+        <div class="qa" id="q-skill-zip"><button class="qa-q" aria-expanded="false"><span>¿Para qué sirve una Skill en .zip?</span><i class="qa-x"></i></button><div class="qa-a"><div><div class="qa-body">
+          <p>Para dividir una Skill grande en varios archivos. El <span class="mono">SKILL.md</span> funciona como «director de orquesta»: contiene una tabla que indica qué sub-archivo leer según la petición, y SYNAPS solo abre el que necesita.</p>
+          <ul>
+            <li><strong>Menos mezcla de reglas:</strong> una instrucción por sub-archivo evita un prompt gigante donde todo se revuelve.</li>
+            <li><strong>Más confiable:</strong> solo carga lo necesario, ahorra memoria del agente y mejora la ejecución.</li>
+          </ul>
+          <p><strong>Ejemplo real de Webedia, <span class="mono">webedia-article-writer.zip</span>:</strong> 8 archivos en un .zip.</p>
+          <ul>
+            <li><span class="mono">SKILL.md</span>: el flujo de 5 pasos y a qué guía de medio mandar (750g, JeuxVideo o AlloCiné).</li>
+            <li><span class="mono">references/</span>: la guía general de Webedia, una guía de tono por medio y un esquema JSON del artículo.</li>
+            <li><span class="mono">assets/</span>: una plantilla HTML con marcadores como <span class="mono">{{titulo}}</span>.</li>
+            <li><span class="mono">scripts/</span>: un script de Python que valida los contadores SEO (PASS/FAIL) e inserta el contenido en la plantilla.</li>
+          </ul>
+          <p>La IA redacta el contenido y el script lo valida y lo acomoda: el control determinista bloquea el <em>clickbait</em> y obliga a corregir el SEO antes de entregar.</p>
+          <p><strong>Límites:</strong> los scripts de una Skill solo pueden ser de <strong>Python o Bash</strong>, y si la vas a usar en <strong>Canvas</strong>, conviene que sea solo el archivo <span class="mono">SKILL.md</span>.</p>
         </div></div></div></div>
         <div class="qa" id="q-skill-agente"><button class="qa-q" aria-expanded="false"><span>¿Skill o agente? ¿Cuál me conviene?</span><i class="qa-x"></i></button><div class="qa-a"><div><div class="qa-body">
           <ul>
@@ -1385,6 +1430,7 @@ p{margin:0}
         <div class="subs">
           <div class="sub"><i class="ph-light ph-rocket-launch"></i><h4>Google Antigravity</h4><p>Entorno de desarrollo agéntico.</p></div>
           <div class="sub"><i class="ph-light ph-database"></i><h4>Servidores MCP</h4><p><em>Model Context Protocol</em> para conectar BigQuery o APIs externas.</p></div>
+          <div class="sub hl"><i class="ph-light ph-books"></i><h4>Catálogo de datos <span class="tag-new">Pronto</span></h4><p>El equipo de Data anunció un catálogo de datos y casos de uso con datos.</p></div>
         </div>
       </div></article>
     </div>
@@ -1905,7 +1951,7 @@ p{margin:0}
     <article class="bz help rv"><div class="core">
       <h3>¿A quién acudo?</h3>
       <div class="help-grid">
-        <div><i class="ph-light ph-user-sound"></i><b>Tu Champion</b><span>Primer punto de apoyo para dudas o para afinar prompts complejos.</span></div>
+        <div><i class="ph-light ph-user-sound"></i><b>Tu Champion</b><span>Primer punto de apoyo para dudas, para afinar prompts y para agendarte en las nuevas sesiones de Skills y de IA.</span></div>
         <div><i class="ph-light ph-chats-circle"></i><b>Comunidad en Google Chat</b><span>Espacio privado donde se comparten dudas, soluciones y casos.</span></div>
         <div><i class="ph-light ph-puzzle-piece"></i><b>Extensión de Chrome</b><span>Bugs, licencias, conectores y casos de uso, con seguimiento en «Mis envíos».</span></div>
         <div><i class="ph-light ph-lifebuoy"></i><b>Core Team</b><span>Incidencias técnicas críticas o licencias adicionales.</span></div>
@@ -1952,6 +1998,7 @@ p{margin:0}
             <li><strong>Extensión de Chrome:</strong> bugs, licencias, conectores y casos de uso.</li>
             <li><strong>Core Team:</strong> incidencias técnicas críticas y licencias adicionales.</li>
             <li><strong>Guías y biblioteca de prompts</strong>, y esta misma guía.</li>
+            <li><strong>Nuevas sesiones de capacitación:</strong> hay sesiones adicionales sobre Skills y sobre IA en general; pídele a tu Champion que te agende.</li>
           </ul>
         </div></div></div></div>
       </div></div>
